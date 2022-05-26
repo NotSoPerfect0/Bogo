@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/x-icon" href="duck.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Sorting Algorithm(s)</title>
+    </head>
+        <body>
+            <div id="numContainer">
+                <span id="num1" class="number">1</span>
+                <span id="num2" class="number">2</span>
+                <span id="num3" class="number">3</span>
+                <span id="num4" class="number">4</span>
+                <span id="num5" class="number">5</span>
+            </div>
+            <br>
+            <div id="infoContainer">
+                <p id="FinishCounter">Finished Sorts: </p>
+                <p id="TotalCounter">Total Sorts: </p>
+            </div>
+            <div id="buttonContainer">
+                <button type="button" class="button" onclick="pause()">Pause</button>
+                <button type="button" class="button" onclick="start()">Start</button>
+                <button type="button" class="button" onclick="reload()">Clear</button>
+            </div>
+            <input id="speedText" type="text" placeholder="Sort Delay (0-999)" minlength="1" maxlength="3" value="">
+            <p id="info">-bogosort- <br><br> In computer science, bogosort (also known as permutation sort, stupid sort, or slowsort) is a sorting algorithm based on the generate and test paradigm. The function successively generates permutations of its input until it finds one that is sorted. It is not considered useful for sorting, but may be used for educational purposes, to contrast it with more efficient algorithms.</p>
+            <script src="script.js"></script>
+        </body>
+</html>
